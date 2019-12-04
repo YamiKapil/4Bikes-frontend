@@ -1,0 +1,99 @@
+
+<GridLayout rows="auto,*">
+    <StackLayout row="0">
+            <ActionBar>
+                    <StackLayout orientation="horizontal">
+                        <GridLayout>
+                            <Label text="&#xf0c9;" class="fa rad-icon" (tap)="onDrawerButtonTap()" horizontalAlignment="left"></Label>
+                    <Image src="~/images/logo1.png" stretch="aspectFill" class="headerimg" verticalAlignment="center"
+                    horizontalAlignment="left"></Image>
+                    <Label text="&#xf064;" class="fa fa-share" (tap)="shareUrl()" horizontalAlignment="right"></Label>
+                        </GridLayout>
+                    </StackLayout>
+                </ActionBar>
+    </StackLayout>
+
+
+<ScrollView row="1">
+    <GridLayout row="*,auto">
+    <StackLayout row="0" backgroundcolor="lightgray">
+
+        <GridLayout class="homeindex" >
+            <Image src="~/images/road1.jpg" (tap)="onRoadTap('/category/road')"></Image>
+            <GridLayout verticalAlignment="bottom">
+                <StackLayout>
+                    <Label text="ROAD" ></Label>
+                </StackLayout>
+            </GridLayout>
+        </GridLayout>
+
+        <GridLayout class="homeindex" (tap)="onRoadTap('/category/mountain')">
+            <Image src="~/images/mountain1.jpg"></Image>
+            <GridLayout verticalAlignment="bottom">
+                <StackLayout>
+                    <Label text="MOUNTAIN"  ></Label>
+                </StackLayout>
+        </GridLayout>
+            </GridLayout>
+
+        <GridLayout class="homeindex" (tap)="onRoadTap('/category/kinder')">
+            <Image src="~/images/child1.jpg"></Image>
+            <GridLayout verticalAlignment="bottom">
+                <StackLayout>
+                    <Label text="KINDERGARDEN"  ></Label>
+                </StackLayout>
+            </GridLayout>
+        </GridLayout>
+
+        <GridLayout class="homeindex">
+            <Image src="~/images/electric.jpg" (tap)="onRoadTap('/category/electric')"></Image>
+            <GridLayout verticalAlignment="bottom">
+                <StackLayout>
+                    <Label text="Electric"  ></Label>
+                </StackLayout>
+            </GridLayout>
+        </GridLayout>
+
+        <GridLayout class="homeindex">
+            <Image src="~/images/custom.png" (tap)="onRoadTap('/category/custom')"></Image>
+            <GridLayout verticalAlignment="bottom">
+                <StackLayout>
+                    <Label text="Custom" color="black" ></Label>
+                </StackLayout>
+            </GridLayout>
+        </GridLayout>
+
+        <StackLayout row="1" orientation="horizontal">
+            <GridLayout columns="*,*,*" >
+                <StackLayout col="0" row="0" horizontalAlignment="left">
+                    <Button text="&#xf048;" class="fa pag-nav" ></Button>
+                </StackLayout>
+                <StackLayout col="1" row="0" >
+                    <GridLayout columns="*,*,*" >
+                        <StackLayout col="0" row="0" >
+                        <Button text="1" class="number-bttn"></Button>
+                    </StackLayout>
+                    <StackLayout col="1" row="0">
+                            <Button text="2" class="number-bttn"></Button>
+                    </StackLayout>
+                        <StackLayout col="2" row="0">
+                                <Button text="3" class="number-bttn"></Button>
+                        </StackLayout>
+
+                        </GridLayout>
+                </StackLayout>
+                                <StackLayout col="5" row="0" horizontalAlignment="right">
+                                        <Button text="&#xf051;" class="fa pag-nav" ></Button>
+                                </StackLayout>
+
+
+            </GridLayout>
+        </StackLayout>
+
+    </StackLayout>
+</GridLayout>
+</ScrollView>
+<StackLayout>
+    <router-outlet></router-outlet>
+  </StackLayout>
+</GridLayout>

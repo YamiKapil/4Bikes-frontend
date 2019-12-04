@@ -1,0 +1,59 @@
+
+<GridLayout rows="auto,*">
+  <StackLayout row="0">
+      <ActionBar>
+          <StackLayout orientation="horizontal">
+              <GridLayout>
+                  <Label text="&#xf0c9;" class="fa rad-icon" (tap)="onDrawerButtonTap()" horizontalAlignment="left"></Label>
+          <Image src="~/images/logo1.png" stretch="aspectFill" class="headerimg" verticalAlignment="center"
+          horizontalAlignment="left"></Image>
+          <Label text="&#xf064;" class="fa fa-share" (tap)="shareUrl()" horizontalAlignment="right"></Label>
+              </GridLayout>
+          </StackLayout>
+      </ActionBar>
+  </StackLayout>
+</GridLayout>
+
+<ScrollView row="1">
+  <StackLayout backgroundcolor="lightgray" >
+
+    <GridLayout class="homeindex" >
+      <Image src="~/images/newss.jpg" stretch="aspectFill"></Image>
+
+      <GridLayout rows="*,*" verticalAlignment="bottom">
+          <StackLayout row="0" class="maindes">
+            <Label text="NEWS"></Label>
+          </StackLayout>
+          <StackLayout row="1">
+            <Label text="Welcome to the news section.."></Label>
+          </StackLayout>
+      </GridLayout>
+    </GridLayout>
+
+    <GridLayout>
+      <Image src="~/images/news1.jpg"></Image>
+    </GridLayout>
+    <StackLayout class="textdesc">
+      <Label text="Our retül fit room has been updated.
+Do you want to sit more comfortably on the bike?
+Do you want to do mileage like a pro?
+Do you have neck or back complaints?
+Then this is the solution" textWrap="true" ></Label>
+      <Button text="Read More" backgroundcolor="black" color="white" horizontalAlignment="left"
+      width="100"></Button>
+    </StackLayout>
+
+
+    <GridLayout>
+      <Image src="~/images/news2.png"></Image>
+    </GridLayout>
+    <StackLayout class="textdesc">
+      <Label text="With only 150 grams, the S-Works EXOS is the lightest cycling shoe with a Boa® dial ever produced.
+Not only are they ridiculously light, but they still have all the functions that are synonymous with the S-Works label.
+They are still of World Tour level, but ridiculously light." textWrap="true"></Label>
+        <Button text="Read More" backgroundcolor="black" color="white" horizontalAlignment="left"
+         width="100"></Button>
+    </StackLayout>
+
+  </StackLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+
+
+<GridLayout rows="auto,*">
+    <StackLayout row="0">
+        <ActionBar>
+            <StackLayout orientation="horizontal">
+                <GridLayout>
+                    <Label text="&#xf0c9;" class="fa rad-icon" (tap)="onDrawerButtonTap()" horizontalAlignment="left"></Label>
+            <Image src="~/images/logo1.png" stretch="aspectFill" class="headerimg" verticalAlignment="center"
+            horizontalAlignment="left"></Image>
+            <Label text="&#xf064;" class="fa fa-share" (tap)="shareUrl()" horizontalAlignment="right"></Label>
+                </GridLayout>
+            </StackLayout>
+        </ActionBar>
+    </StackLayout>
+
+
+    <ScrollView row="1" >
+        <StackLayout backgroundcolor="lightgray">
+            <GridLayout class="homeindex">
+
+                <Image src="~/images/image.jpg" stretch="aspectFill"></Image>
+                <GridLayout rows=*,* verticalAlignment="bottom">
+                    <StackLayout row="0" class="maindes">
+                        <Label  text=ROAD  ></Label>
+                    </StackLayout>
+                    <StackLayout row="1">
+
+                        <Label textWrap="true" text="How do you describe a tacing bike? Is it a machine? A tool? Or is it just an extendion of the body? We believe that a racing bike is much more." ></Label>
+                    </StackLayout>
+                </GridLayout>
+
+            </GridLayout>
+
+            <GridLayout class="homeindex">
+                <Image src="~/images/mount.jpg" stretch="aspectFit"></Image>
+                    <GridLayout rows="*,*" verticalAlignment="bottom">
+                        <StackLayout row="0" class="maindes">
+                            <Label  text=MOUNTAIN  ></Label>
+                        </StackLayout>
+                        <StackLayout row="1">
+                            <Label textWrap="true" text="Whether you want to fly up quickly and efficiently, tame every downhill you encounter or both:We have designed and developed our mountain bikes so that you get the best performing machine." ></Label>
+                        </StackLayout>
+                    </GridLayout>
+            </GridLayout>
+
+            <GridLayout class="homeindex">
+                <Image src="~/images/mount1.jpg" stretch="aspectFit"></Image>
+                    <GridLayout rows="*,*" verticalAlignment="bottom">
+                        <StackLayout row="0" class="maindes">
+                            <Label  text=ELECTRIC ></Label>
+                        </StackLayout>
+                        <StackLayout row="1">
+                            <Label textWrap="true" text="We design e-Bikes with the solgan: You, Only Faster.We do this with our integrated Specialized E-Bike technology system. " ></Label>
+                        </StackLayout>
+                    </GridLayout>
+            </GridLayout>
+
+            <GridLayout class="homeindex">
+                <Image src="~/images/mount2.jpg" stretch="aspectFit"></Image>
+                <GridLayout rows="*,*" verticalAlignment="bottom">
+                    <StackLayout row="0" class="maindes">
+                        <Label  text=FITNESS  ></Label>
+                    </StackLayout>
+                    <StackLayout row="1">
+                        <Label textWrap="true" text="Fitness knows no limits for us. Not mentally, not geographically and certainly not mechanically. With our fitness bikes you can achieve all your goals. " ></Label>
+                    </StackLayout>
+                </GridLayout>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

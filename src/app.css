@@ -1,0 +1,131 @@
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/blue.css";
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+
+.fa{
+    font-family: "FontAwesome","fontawesome-webfont";
+
+}
+
+.maincontent {
+    padding: 5;
+}
+
+/* for site icon */
+.drawer-icon{
+    width:100;
+    align-items: center;
+
+}
+.headerimg{
+    width: 100;
+    margin-left: 110;
+
+}
+
+
+/* .titlemaincontent {
+    height: 70;
+    font-size: 30;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: center;
+    background-color: #3A53FF;
+} */
+
+/* for main topic on home */
+.maindes{
+    font-size: 30;
+    font-weight:700 ;
+}
+
+
+
+.-selected{
+    background-color: lightsteelblue;
+}
+
+.drawertext {
+    text-align: center;
+    vertical-align: center;
+    padding: 5;
+    font-size: 20;
+    font-weight: 400;
+
+}
+
+
+
+/* Image {
+    width: 40;
+    height: 40;
+} */
+
+/* for menu icons */
+.nav-icons{
+    font-size: 30;
+    vertical-align: middle;
+    margin-left: 10;
+    width: 50;
+    height: 30;
+
+}
+.rad-icon{
+    font-size: 30;
+
+}
+.fa-share{
+    font-size: 20;
+}
+
+.bot-icons{
+    font-size: 30;
+    vertical-align: middle;
+    width: 50;
+    height: 30;
+}
+
+
+/* for bottomnav */
+
+.bottomtext{
+    text-align: center;
+    padding: 5;
+}
+
+/* for home */
+
+.homeindex{
+
+    font-size: 20;
+    color: white;
+    margin-bottom: 10;
+}
+
+.textdesc{
+
+    font-size: medium;
+    padding-left: 5;
+
+}
+
+/* page navigation */
+.pag-nav{
+    border-radius: 70%;
+    border-width: 5;
+    height: 50;
+    width: 50;
+    font-size: 20;
+}
+
+.number-bttn{
+    background-color: black;
+    color: white;
+    width: 45;
+
+}
+
+
+

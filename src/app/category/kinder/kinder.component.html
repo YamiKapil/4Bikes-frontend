@@ -1,0 +1,107 @@
+<GridLayout rows="auto,*">
+    <StackLayout row="0">
+        <ActionBar>
+            <StackLayout orientation="horizontal">
+                <GridLayout>
+                    <Label text="&#xf060;" class="fa rad-icon" (tap)="onNavigate()" horizontalAlignment="left"></Label>
+            <Image src="~/images/logo1.png" stretch="aspectFill" class="headerimg" verticalAlignment="center"
+            horizontalAlignment="left"></Image>
+
+                </GridLayout>
+            </StackLayout>
+        </ActionBar>
+    </StackLayout>
+
+
+    <ScrollView row="1">
+      <StackLayout backgroundcolor="lightgray">
+
+        <GridLayout class="homeindex">
+          <Image src="~/images/child1.jpg"></Image>
+            <GridLayout verticalAlignment="bottom">
+              <StackLayout>
+                  <Label text="Kindergarden" ></Label>
+                </StackLayout>
+              </GridLayout>
+        </GridLayout>
+
+        <GridLayout rows="*,*,*,*" columns="*,*" >
+
+            <GridLayout row="0" col="0" padding="3">
+              <StackLayout backgroundcolor="white">
+                <Image src="~/images/road/kinder1.jpg" ></Image>
+                <StackLayout>
+                  <Label text="Hot Rock 20"></Label>
+                </StackLayout>
+              </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="0" col="1" padding="3">
+              <StackLayout backgroundcolor="white">
+                <Image src="~/images/road/kinder2.jpg" ></Image>
+                <StackLayout>
+                  <Label text="Hot Rock 24"></Label>
+                </StackLayout>
+              </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="1" col="0" padding="3">
+              <StackLayout backgroundcolor="white">
+                <Image src="~/images/road/kinder3.jpg" ></Image>
+                <StackLayout>
+                  <Label text="HOtwalk"></Label>
+                </StackLayout>
+              </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="1" col="1" padding="3">
+                <StackLayout backgroundcolor="white">
+                  <Image src="~/images/road/kinder4.jpg" ></Image>
+                  <StackLayout>
+                    <Label text="Riprock 12"></Label>
+                  </StackLayout>
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="2" col="0" padding="3">
+                <StackLayout backgroundcolor="white">
+                  <Image src="~/images/road/kinder5.jpg" ></Image>
+                  <StackLayout>
+                    <Label text="Riprock 16"></Label>
+                  </StackLayout>
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="2" col="1" padding="3">
+                <StackLayout backgroundcolor="white">
+                  <Image src="~/images/road/kinder6.jpg" ></Image>
+                  <StackLayout>
+                    <Label text="Riprock 20"></Label>
+                  </StackLayout>
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="3" col="0" padding="3">
+                <StackLayout backgroundcolor="white">
+                  <Image src="~/images/road/kinder7.jpg" ></Image>
+                  <StackLayout>
+                    <Label text="Riprock 24"></Label>
+                  </StackLayout>
+                </StackLayout>
+              </GridLayout>
+
+          </GridLayout>
+
+          <GridLayout class="homeindex">
+            <Image src="~/images/newss.jpg"></Image>
+              <GridLayout verticalAlignment="bottom">
+                <StackLayout>
+                    <Label text="ROAD" ></Label>
+                  </StackLayout>
+                </GridLayout>
+          </GridLayout>
+
+
+      </StackLayout>
+    </ScrollView>
+  </GridLayout>

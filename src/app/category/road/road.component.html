@@ -1,0 +1,84 @@
+<GridLayout rows="auto,*" >
+  <StackLayout row="0">
+      <ActionBar>
+          <StackLayout orientation="horizontal">
+              <GridLayout>
+                  <Label text="&#xf060;" class="fa rad-icon" (tap)="onNavigate()" horizontalAlignment="left"></Label>
+          <Image src="~/images/logo1.png" stretch="aspectFill" class="headerimg" verticalAlignment="center"
+          horizontalAlignment="left"></Image>
+
+              </GridLayout>
+          </StackLayout>
+      </ActionBar>
+  </StackLayout>
+
+
+<ScrollView row="1">
+    <StackLayout backgroundcolor="lightgray">
+
+      <GridLayout class="homeindex">
+        <Image src="~/images/road1.jpg"></Image>
+          <GridLayout verticalAlignment="bottom">
+            <StackLayout >
+                <Label text="ROAD" ></Label>
+              </StackLayout>
+            </GridLayout>
+      </GridLayout>
+
+      <StackLayout>
+          <Label text="4Bikes->Product->Road"></Label>
+        </StackLayout>
+
+      <GridLayout rows="*,*" columns="*,*" >
+
+        <GridLayout row="0" col="0" padding="3">
+          <StackLayout backgroundcolor="white">
+            <Image src="~/images/road/road12.jpg" ></Image>
+            <StackLayout>
+              <Label text="Performance"></Label>
+            </StackLayout>
+          </StackLayout>
+        </GridLayout>
+
+        <GridLayout row="0" col="1" padding="3">
+          <StackLayout backgroundcolor="white">
+            <Image src="~/images/road/road13.jpg" ></Image>
+            <StackLayout>
+              <Label text="Adventure & Gravel"></Label>
+            </StackLayout>
+          </StackLayout>
+        </GridLayout>
+
+        <GridLayout row="1" col="0" padding="3">
+          <StackLayout backgroundcolor="white">
+            <Image src="~/images/road/road14.jpg" ></Image>
+            <StackLayout>
+              <Label text="Cyclocross"></Label>
+            </StackLayout>
+          </StackLayout>
+        </GridLayout>
+
+        <GridLayout row="1" col="1" padding="3">
+          <StackLayout backgroundcolor="white">
+            <Image src="~/images/road/road15.jpg" ></Image>
+            <StackLayout>
+              <Label text="Triathlon"></Label>
+            </StackLayout>
+          </StackLayout>
+        </GridLayout>
+
+      </GridLayout>
+
+      <GridLayout class="homeindex">
+        <Image src="~/images/newss.jpg"></Image>
+          <GridLayout verticalAlignment="bottom">
+            <StackLayout>
+                <Label text="ROAD" ></Label>
+              </StackLayout>
+            </GridLayout>
+      </GridLayout>
+
+
+    </StackLayout>
+</ScrollView>
+</GridLayout>

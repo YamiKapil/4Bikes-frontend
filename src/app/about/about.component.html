@@ -1,0 +1,57 @@
+
+<GridLayout rows="auto,*">
+    <StackLayout row="0">
+            <ActionBar>
+                    <StackLayout orientation="horizontal">
+                        <GridLayout>
+                            <Label text="&#xf0c9;" class="fa rad-icon" (tap)="onDrawerButtonTap()" horizontalAlignment="left"></Label>
+                    <Image src="~/images/logo1.png" stretch="aspectFill" class="headerimg" verticalAlignment="center"
+                    horizontalAlignment="left"></Image>
+                    <Label text="&#xf064;" class="fa fa-share" (tap)="shareUrl()" horizontalAlignment="right"></Label>
+                        </GridLayout>
+                    </StackLayout>
+                </ActionBar>
+        </StackLayout>
+
+        <ScrollView row="1">
+            <StackLayout backgroundcolor="lightgray">
+
+                <GridLayout class="homeindex">
+                    <Image src="~/images/aboutus.jpg" stretch="aspectFill"></Image>
+                    <GridLayout rows=*,* verticalAlignment="bottom" >
+                        <StackLayout row="0" class="maindes">
+                            <Label text="About Us"></Label>
+                        </StackLayout>
+                        <StackLayout row="1">
+                            <Label text="Specialized Brand Store Westerlo - 750m² of shopping pleasure" textWrap="true"></Label>
+                        </StackLayout>
+                    </GridLayout>
+                </GridLayout>
+
+                    <StackLayout class="textdesc">
+                        <Label text="The Specialized Brand Store in Westerlo is no less than 750 m² in size and spread over 2 floors.
+                        The ground floor is entirely devoted to Race, MTB, Leisure and children's bicycles. The upper floor is colored by Specialized and custom cycling clothing, a wide range of helmets and an extensive shoe department. Ladies can visit our separate Womens corner.
+                        Last but not least, a completely renewed and specially equipped Retül measuring room to measure our customers even more accurately and to be able to adjust their very best cycling position. And all this with a Top TEAM that guarantees the best service."
+                        textWrap="true"></Label>
+                    </StackLayout>
+
+                <GridLayout class="homeindex">
+                    <Image src="~/images/fitsen2.jpg" stretch="aspectFill"></Image>
+
+                <GridLayout verticalAlignment="bottom">
+                    <StackLayout >
+                        <Label text="Test your dream bike"></Label>
+                    </StackLayout>
+                </GridLayout>
+                </GridLayout>
+                <StackLayout class="textdesc">
+                    <Label text=" Do you want to test the latest Specialized racing bikes or mountain bikes? With us this is possible! Our expert staff are ready to adjust your test bike perfectly for you and to answer any questions skillfully.
+                    Come and test the latest Epic on a technical single track, or the Tarmac on a steep climb. They are entirely at your disposal. Our E-bike department is also starting to become more important and important today. Test the Vado's, Como's and Levo's with us today."
+                    textWrap="true"></Label>
+                </StackLayout>
+                <Button text="Read More" backgroundcolor="black" color="white" horizontalAlignment="left" width="100"></Button>
+
+            </StackLayout>
+        </ScrollView>
+
+</GridLayout>

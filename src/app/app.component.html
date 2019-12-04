@@ -1,0 +1,79 @@
+
+<RadSideDrawer >
+    <GridLayout tkDrawerContent rows="auto,*" class="maincontent">
+         <!--<Image src="~images/menu.png" (tap)="openDrawer()"></Image>-->
+        <StackLayout row="0"  backgroundcolor="blue" padding="20">
+
+                <Image src="~/images/logo1.png" stretch="aspectFill" class="drawer-icon"></Image>
+            <hr>
+        </StackLayout>
+        <ScrollView row="1">
+            <StackLayout class="stackcolor">
+                <GridLayout columns="auto,*"  (tap)="onNavItemTap('/home')"
+                [class.-selected]="isComponentSelected('/home')" margintop="10">
+                    <Label  text="&#xf015;" class="fa nav-icons"></Label>
+                <Label col="1" text="Home" class="drawertext"  ></Label>
+                </GridLayout>
+                <StackLayout class="hr "></StackLayout>
+
+                <GridLayout columns="auto,*"  (tap)="onNavItemTap('/browse')"
+                [class.-selected]="isComponentSelected('/browse')" >
+                <Label text="&#xf1ea;" class="fa nav-icons"></Label>
+                        <Label col="1" text="News" class="drawertext" ></Label>
+                </GridLayout>
+                <StackLayout class="hr "></StackLayout>
+
+                <GridLayout columns="auto,*"  (tap)="onNavItemTap('/category')"
+                [class.-selected]="isComponentSelected('/category')">
+                <Label text="&#xf206;" class="fa nav-icons"></Label>
+                <Label col="1" text="Bicycles" class="drawertext" ></Label>
+                </GridLayout>
+                <StackLayout class="hr "></StackLayout>
+
+                <GridLayout columns="auto,*"  (tap)="onNavItemTap('/about')"
+                [class.-selected]="isComponentSelected('/about')" >
+                <Label text="&#xf129;" class="fa nav-icons"></Label>
+                <Label col="1" text="About Us" class="drawertext" ></Label>
+                </GridLayout>
+                <StackLayout class="hr"></StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+
+    <GridLayout rows="*,auto" tkMainContent>
+        <StackLayout row="0">
+                <page-router-outlet ></page-router-outlet>
+        </StackLayout>
+
+        <StackLayout row="1" class="stackcolor">
+            <GridLayout columns="*,*,*,*"  >
+                <StackLayout col="0" (tap)="onNavItemTap('/home')" class="bottomtext"
+                [class.-selected]="isComponentSelected('/home')">
+                <Label text="&#xf015;" class="fa bot-icons"></Label>
+                <Label  text="Home" ></Label>
+                </StackLayout>
+
+                <StackLayout col="1" (tap)="onNavItemTap('/browse')" class="bottomtext"
+                [class.-selected]="isComponentSelected('/browse')">
+                <Label text="&#xf1ea;" class="fa bot-icons"></Label>
+                <Label  text="News" ></Label>
+            </StackLayout>
+
+            <StackLayout col="2" (tap)="onNavItemTap('/category')" class="bottomtext"
+            [class.-selected]="isComponentSelected('/category')">
+            <Label text="&#xf206;" class="fa bot-icons"></Label>
+                <Label  text="Bicycles" ></Label>
+            </StackLayout>
+
+            <StackLayout col="4" (tap)="onNavItemTap('/about')" class="bottomtext"
+            [class.-selected]="isComponentSelected('/about')">
+            <Label text="&#xf129;" class="fa bot-icons"></Label>
+                <Label  text="About Us" ></Label>
+            </StackLayout>
+
+            </GridLayout>
+
+        </StackLayout>
+    </GridLayout>
+</RadSideDrawer>
